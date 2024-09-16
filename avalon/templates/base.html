@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href='{% static "style.css" %}'>
+
+
+</head>
+<body>
+    {% csrf_token %}
+    <nav>
+        <div class="logo">Avalon</div>
+        <ul>
+            <li><a href="http://127.0.0.1:8000/">Текст 1</a></li>
+            <li><a href="http://127.0.0.1:8000/sail">Текст 2</a></li>
+            <li><a href="http://127.0.0.1:8000/register">Текст 3</a></li>
+            <li><a href="http://127.0.0.1:8000/contacts">Текст 4</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        {% block pagename %}
+            <h1> Заголовок страницы</h1>
+        {% endblock %}
+    </header>
+    <nav>
+        {% block menu %}
+           
+        {% endblock %}
+    </nav>
+
+    <main>
+        {% block content %}
+            
+        {% endblock %}
+    </main>
+
+</body>
+</html>

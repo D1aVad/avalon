@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block pagename %}
+    <h1>Текст</h1>
+{% endblock %}
+
+{% block menu %}
+    {{ block.super }}
+{% endblock %}
+
+{% block content %}
+
+    <h4>Введите слово</h4>
+    <form method="post">
+        {% csrf_token %}
+        <label for="search">Введите запрос</label>
+        <input type="text" id = 'search' name="search" maxlength="30" required>
+        <button type="submit">Отправить</button>
+    </form>
+
+ 
+    
+{% endblock %}

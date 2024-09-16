@@ -1,0 +1,95 @@
+body {
+    background-color: #333030;
+}
+/* Стилизация контейнера для ссылок */
+nav {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 2vh;
+    display: flex;
+}
+
+.logo {
+    font-size: 30px;
+    cursor: pointer;
+    width: 5vw;
+    margin-left: 5vw;
+    color: seashell;
+}
+
+ul {
+    width: 110vh;
+    height: 5vh;
+    text-align: center;
+    margin-top: 0.01vw;
+    margin-left: 80vh;
+}
+
+ul li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    color: rgb(151, 148, 145);
+}   
+
+ul li:hover {
+    color: wheat;
+    transition: 0.3s;
+    border-bottom: solid 1px white;
+}
+a {
+    color: rgb(151, 148, 145);
+    text-decoration: none;
+}
+
+a:hover {
+    color: wheat;
+    transition: 0.5s;
+    border-bottom: solid 1px white;
+    
+}
+h2 {
+    color: aqua;
+}
+
+.h1 {
+    color: aqua;
+}
+img {
+    width: auto;
+    height: 500px;
+    
+}
+.container {
+    display: flex; /* Используем Flexbox */
+    flex-direction: row; /* Размещаем элементы в ряд */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    width: 100%; /* Ширина контейнера равна ширине экрана */
+}
+.stolbik {
+    flex: 1; /* Элементы будут занимать равное пространство */
+    padding: 10px; /* Добавляем отступы */
+}
+.text-one {
+    font-size: 25px;
+    color:beige;
+}
+.zakaz {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.text-red {
+    font-size: 20px;
+    color:darkcyan;
+}
+.reg {
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+}
+.contacts {
+    font-size: 25px;
+    color: white;
+}
